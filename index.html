@@ -1,0 +1,1383 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KOPNAS Pertamina Bersatu 139</title>
+<meta name="description" content="Website profil KOPNAS Pertamina Bersatu 139.">
+
+<!-- LOGO TAB CHROME / FAVICON -->
+<link rel="icon" type="image/png" href="img/logo-kopnas.png">
+<link rel="shortcut icon" type="image/png" href="img/logo-kopnas.png">
+
+<!-- FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Rubik:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- ICON -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+<!-- BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+:root {
+    --green: #176b38;
+    --dark-green: #104b2a;
+    --light-green: #edf5ec;
+    --gold: #d9ad28;
+    --cream: #fbfaf5;
+    --dark: #26372c;
+    --text: #657168;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text);
+    overflow-x: hidden;
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Rubik', sans-serif;
+    color: var(--dark);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-space {
+    padding: 75px 0;
+}
+
+.section-label {
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-heading {
+    font-size: clamp(26px, 3vw, 36px);
+    line-height: 1.25;
+    margin-bottom: 16px;
+}
+
+.section-desc {
+    max-width: 720px;
+    margin: auto;
+    font-size: 14px;
+}
+
+.btn-kopnas {
+    display: inline-block;
+    background: var(--green);
+    border: 2px solid var(--green);
+    color: white;
+    padding: 11px 23px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: .25s;
+}
+
+.btn-kopnas:hover {
+    background: var(--dark-green);
+    color: white;
+}
+
+.btn-outline-kopnas {
+    display: inline-block;
+    border: 2px solid white;
+    color: white;
+    padding: 11px 23px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn-outline-kopnas:hover {
+    background: white;
+    color: var(--green);
+}
+
+/* TOPBAR */
+.topbar-kopnas {
+    background: var(--dark-green);
+    color: white;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+/* NAVBAR */
+.navbar-kopnas {
+    background: white;
+    padding: 12px 0;
+    min-height: 82px;
+    box-shadow: 0 3px 18px rgba(0,0,0,.07);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-kopnas .navbar-brand {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    max-width: 280px;
+}
+
+.brand-logo {
+    width: 57px;
+    height: 57px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-right: 11px;
+}
+
+.brand-name {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 800;
+    color: var(--dark-green);
+}
+
+.brand-subtitle {
+    display: block;
+    font-size: 10px;
+    color: #a17e17;
+    letter-spacing: 1px;
+    margin-top: 3px;
+}
+
+.navbar-kopnas .navbar-nav {
+    align-items: center;
+}
+
+.navbar-kopnas .nav-link {
+    color: #354b3b;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 9px;
+    white-space: nowrap;
+}
+
+.navbar-kopnas .nav-link:hover {
+    color: var(--green);
+}
+
+.navbar-kopnas .navbar-toggler {
+    border: 1px solid var(--green);
+    box-shadow: none;
+}
+
+/* BERANDA */
+.hero-kopnas {
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    background:
+      linear-gradient(90deg,rgba(10,45,25,.88),rgba(15,68,35,.55)),
+      url('img/project-7.png') center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 720px;
+    padding: 90px 0;
+}
+
+.hero-tag {
+    display: inline-block;
+    color: #f6e9b9;
+    border: 1px solid #f6e9b9;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.hero-kopnas h1 {
+    color: white;
+    font-size: clamp(34px,4.5vw,54px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-kopnas p {
+    color: #f0f4ee;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* HIGHLIGHT */
+.highlight-card {
+    height: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-bottom: 4px solid var(--gold);
+    box-shadow: 0 8px 25px rgba(20,60,35,.08);
+}
+
+.highlight-card i {
+    color: var(--green);
+    font-size: 25px;
+    margin-bottom: 13px;
+}
+
+.highlight-card h5 {
+    font-size: 16px;
+}
+
+.highlight-card p {
+    font-size: 13px;
+    margin: 0;
+}
+
+/* PROFIL */
+.profile-image {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.profile-copy {
+    text-align: justify;
+    font-size: 14px;
+}
+
+.profile-point {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+.profile-point i {
+    color: var(--green);
+    margin-top: 5px;
+}
+
+/* SEJARAH */
+.history-box {
+    background: var(--cream);
+    border-left: 5px solid var(--gold);
+    border-radius: 8px;
+    padding: 28px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* VISI MISI */
+.vision-card,.mission-card {
+    height: 100%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.vision-card {
+    background: var(--green);
+    color: white;
+}
+
+.vision-card h3,.vision-card p {
+    color: white;
+}
+
+.vision-card p {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.mission-card {
+    background: white;
+    border: 1px solid #e6ebdf;
+    box-shadow: 0 8px 25px rgba(20,60,35,.05);
+}
+
+.mission-card h3 {
+    color: var(--green);
+}
+
+.vision-card i,.mission-card i {
+    color: var(--gold);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* ORGANISASI */
+.org-section {
+    background: var(--cream);
+}
+
+.org-image-frame {
+    background: white;
+    padding: 15px;
+    border: 1px solid #e5e9df;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(20,60,35,.06);
+}
+
+.org-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.org-list {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 13px;
+}
+
+.org-item {
+    background: white;
+    border: 1px solid #e6ebdf;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.org-item h6 {
+    color: var(--green);
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.org-item p {
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* KEGIATAN */
+.activity-card {
+    height: 100%;
+    background: white;
+    border: 1px solid #e8ece5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 7px 24px rgba(20,60,35,.06);
+    transition: .25s;
+}
+
+.activity-card:hover {
+    transform: translateY(-4px);
+}
+
+.activity-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.activity-content {
+    padding: 22px;
+}
+
+.activity-content h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.activity-content p {
+    font-size: 13px;
+    margin: 0;
+}
+
+/* PERSEDIAAN */
+.inventory-panel {
+    background: var(--dark-green);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.inventory-panel h3 {
+    color: white;
+    font-size: 25px;
+}
+
+.inventory-panel p {
+    color: #e1eadf;
+    font-size: 13px;
+}
+
+.inventory-step {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 21px;
+}
+
+.inventory-number {
+    width: 37px;
+    height: 37px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--gold);
+    color: var(--dark-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.inventory-step h6 {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.inventory-step p {
+    font-size: 12px;
+    margin: 0;
+}
+
+/* GALERI */
+.gallery-card {
+    overflow: hidden;
+    border-radius: 9px;
+    background: white;
+    box-shadow: 0 6px 20px rgba(20,60,35,.07);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    transition: .3s;
+}
+
+.gallery-card:hover .gallery-image {
+    transform: scale(1.04);
+}
+
+/* KONTAK */
+.contact-section {
+    background: var(--cream);
+}
+
+.contact-panel {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    height: 100%;
+    border: 1px solid #e6ebdf;
+    box-shadow: 0 7px 23px rgba(20,60,35,.05);
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #354a3a;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 18px 0;
+    overflow-wrap: anywhere;
+}
+
+.contact-link:hover {
+    color: var(--green);
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    color: white;
+    background: var(--green);
+}
+
+.map-frame {
+    width: 100%;
+    height: 260px;
+    border: 0;
+    border-radius: 8px;
+    display: block;
+}
+
+/* FOOTER */
+.footer-kopnas {
+    background: #103b25;
+    color: #dce8dd;
+    padding-top: 55px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer-kopnas h5 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 17px;
+}
+
+.footer-kopnas p {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.footer-kopnas a {
+    color: #dce8dd;
+    overflow-wrap: anywhere;
+}
+
+.footer-kopnas a:hover {
+    color: #f5e8b6;
+}
+
+.footer-logo {
+    width: 62px;
+    height: 62px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    padding: 3px;
+    margin-bottom: 14px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 9px;
+    margin-top: 17px;
+}
+
+.footer-social a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,.13);
+    color: white;
+}
+
+.footer-social a:hover {
+    background: var(--gold);
+    color: var(--dark-green);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,.16);
+    margin-top: 30px;
+    padding: 18px 0;
+    font-size: 12px;
+}
+
+/* RESPONSIVE */
+@media(max-width:1199px) {
+    .navbar-kopnas .nav-link {
+        font-size: 11px;
+        padding: 9px 6px;
+    }
+
+    .brand-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .brand-name {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:991px) {
+    .navbar-kopnas .navbar-collapse {
+        flex-basis: 100%;
+        width: 100%;
+        padding-top: 12px;
+    }
+
+    .navbar-kopnas .navbar-nav {
+        align-items: stretch;
+    }
+
+    .navbar-kopnas .nav-link {
+        font-size: 13px;
+        white-space: normal;
+    }
+
+    .org-list {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+
+@media(max-width:767px) {
+    .section-space {
+        padding: 55px 0;
+    }
+
+    .hero-kopnas {
+        min-height: 490px;
+    }
+
+    .hero-content {
+        padding: 65px 0;
+    }
+
+    .hero-kopnas h1 {
+        font-size: 34px;
+    }
+
+    .profile-image {
+        height: 270px;
+    }
+
+    .org-list {
+        grid-template-columns: 1fr;
+    }
+
+    .map-frame {
+        height: 230px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar-kopnas">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <span>Koperasi Nasional Pertamina Bersatu 139</span>
+        <span><i class="fas fa-map-marker-alt me-2"></i>Binjai Utara, Sumatera Utara</span>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-kopnas" id="mainNavbar">
+    <div class="container">
+
+        <a class="navbar-brand" href="#beranda">
+            <img src="img/logo-kopnas.png"
+                 class="brand-logo"
+                 alt="Logo KOPNAS PB 139">
+
+            <span class="brand-name">
+                KOPNAS PERTAMINA
+                <span class="brand-subtitle">BERSATU 139</span>
+            </span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarKopnas"
+                aria-label="Buka navigasi">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarKopnas">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#beranda">Beranda</a>
+                <a class="nav-link" href="#profil">Profil</a>
+                <a class="nav-link" href="#sejarah">Sejarah</a>
+                <a class="nav-link" href="#visi-misi">Visi & Misi</a>
+                <a class="nav-link" href="#organisasi">Organisasi</a>
+                <a class="nav-link" href="#kegiatan">Kegiatan & Persediaan</a>
+                <a class="nav-link" href="#galeri">Galeri</a>
+                <a class="nav-link" href="#kontak">Kontak</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- BERANDA -->
+<header class="hero-kopnas" id="beranda">
+    <div class="container">
+        <div class="hero-content">
+            <span class="hero-tag">KOPERASI NASIONAL PERTAMINA BERSATU 139</span>
+
+            <h1>Mendukung Kualitas dan Keamanan Tabung LPG</h1>
+
+            <p>
+                Mengenal KOPNAS Pertamina Bersatu 139 melalui profil
+                perusahaan, kegiatan inspeksi dan pemeliharaan tabung LPG,
+                serta pengelolaan persediaan bahan baku untuk mendukung
+                kegiatan operasional.
+            </p>
+
+            <a href="#profil" class="btn-kopnas me-2 mb-2">
+                Kenali Perusahaan <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+
+            <a href="#kegiatan" class="btn-outline-kopnas mb-2">
+                Lihat Kegiatan
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- HIGHLIGHT -->
+<section class="pb-4">
+    <div class="container">
+        <div class="row g-3">
+
+            <div class="col-md-4">
+                <div class="highlight-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h5>Berdiri Sejak 2010</h5>
+                    <p>Didirikan di Jakarta pada tanggal 5 Oktober 2010.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="highlight-card">
+                    <i class="fas fa-tools"></i>
+                    <h5>Pemeliharaan Tabung LPG</h5>
+                    <p>Bergerak di bidang inspeksi dan pemeliharaan tabung LPG.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="highlight-card">
+                    <i class="fas fa-boxes"></i>
+                    <h5>Pengelolaan Persediaan</h5>
+                    <p>Mendukung kegiatan operasional melalui pengelolaan material dan persediaan.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PROFIL -->
+<section class="section-space" id="profil">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+
+            <div class="col-lg-5">
+                <img src="img/profil-beranda.png"
+                     class="profile-image shadow-sm"
+                     alt="Profil perusahaan KOPNAS">
+            </div>
+
+            <div class="col-lg-7">
+                <div class="section-label">Profil Perusahaan</div>
+                <h2 class="section-heading">KOPNAS Pertamina Bersatu 139</h2>
+
+                <div class="profile-copy">
+                    <p>
+                        Koperasi Nasional Pertamina Bersatu 139 atau disingkat
+                        KOPNAS PB 139 merupakan koperasi yang beranggotakan
+                        para pekerja PT Pertamina (Persero) dan telah tergabung
+                        dalam Federasi Serikat Pekerja Pertamina Bersatu (FSPPB).
+                    </p>
+
+                    <p>
+                        KOPNAS Pertamina Bersatu 139 bergerak di bidang
+                        inspeksi dan pemeliharaan tabung LPG. Kegiatan
+                        operasional perusahaan dikembangkan di Kelurahan
+                        Cengkeh Turi, Kecamatan Binjai Utara, Kota Binjai,
+                        Sumatera Utara.
+                    </p>
+
+                    <p>
+                        Melalui kegiatan bengkel pemeliharaan tabung LPG (PBT),
+                        perusahaan bertujuan meningkatkan kualitas dan
+                        keamanan tabung LPG serta memastikan tabung memenuhi
+                        standar kelayakan untuk digunakan kembali.
+                    </p>
+                </div>
+
+                <div class="profile-point">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Bergerak di bidang inspeksi dan pemeliharaan tabung LPG.</span>
+                </div>
+
+                <div class="profile-point">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Beroperasi di wilayah Binjai Utara, Sumatera Utara.</span>
+                </div>
+
+                <div class="profile-point">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Memperhatikan standar fasilitas dan pedoman operasional bengkel pemeliharaan tabung LPG.</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SEJARAH -->
+<section class="section-space" id="sejarah" style="background:var(--cream)">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <div class="section-label">Perjalanan Perusahaan</div>
+            <h2 class="section-heading">Sejarah KOPNAS PB 139</h2>
+            <p class="section-desc">
+                Perjalanan Koperasi Nasional Pertamina Bersatu 139 dalam
+                mengembangkan kegiatan inspeksi dan pemeliharaan tabung LPG.
+            </p>
+        </div>
+
+        <div class="history-box">
+            <p>
+                Koperasi Nasional Pertamina Bersatu 139 atau disingkat
+                KOPNAS PB 139 pertama kali didirikan di Jakarta pada tanggal
+                5 Oktober 2010. Koperasi ini beranggotakan para pekerja
+                PT Pertamina (Persero) dan telah tergabung dalam Federasi
+                Serikat Pekerja Pertamina Bersatu (FSPPB). KOPNAS Pertamina
+                Bersatu 139 bergerak di bidang inspeksi dan pemeliharaan
+                tabung LPG.
+            </p>
+
+            <p>
+                Dalam kegiatan operasionalnya, tabung LPG yang beredar di
+                masyarakat diperoleh dari depot pengisian gas LPG (SPPBE)
+                melalui proses pengambilan tabung. KOPNAS Pertamina Bersatu
+                139 kemudian mengembangkan kegiatan operasionalnya di
+                Sumatera Utara, tepatnya di Kelurahan Cengkeh Turi,
+                Kecamatan Binjai Utara, Kota Binjai.
+            </p>
+
+            <p class="mb-0">
+                Kegiatan pemeliharaan tabung LPG dilaksanakan dengan
+                memperhatikan standar fasilitas dan pedoman operasional
+                bengkel pemeliharaan tabung LPG yang tercantum dalam dokumen
+                standar BPT No. 001/F20200/2016-S5 REK 0 tanggal
+                23 Februari 2016.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- VISI MISI -->
+<section class="section-space" id="visi-misi">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <div class="section-label">Arah dan Tujuan</div>
+            <h2 class="section-heading">Visi dan Misi Perusahaan</h2>
+            <p class="section-desc">
+                Landasan arah dan tujuan perusahaan dalam menjalankan
+                kegiatan usahanya.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-6">
+                <div class="vision-card">
+                    <i class="fas fa-eye"></i>
+                    <h3 class="mb-3">Visi</h3>
+                    <p class="mb-0">Menjadi perusahaan energi nasional kelas dunia.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="mission-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3 class="mb-3">Misi</h3>
+                    <p class="mb-0" style="font-size:16px">
+                        Menjalankan usaha minyak, gas, serta energi baru
+                        dan terbarukan secara terintegrasi.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ORGANISASI -->
+<section class="section-space org-section" id="organisasi">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <div class="section-label">Manajemen Perusahaan</div>
+            <h2 class="section-heading">Struktur Organisasi KOPNAS PB 139</h2>
+            <p class="section-desc">
+                Struktur organisasi menunjukkan pembagian jabatan,
+                wewenang, dan tanggung jawab dalam menjalankan kegiatan
+                operasional perusahaan.
+            </p>
+        </div>
+
+        <div class="org-image-frame mb-5">
+            <img src="img/struktur organisasi-kopnas.jpeg"
+                 class="org-image"
+                 alt="Struktur Organisasi KOPNAS PB 139">
+        </div>
+
+        <h3 class="mb-4" style="font-size:23px">Tugas dan Tanggung Jawab</h3>
+
+        <div class="org-list">
+
+            <div class="org-item">
+                <h6>1. Manager</h6>
+                <p>Memimpin dan mengawasi seluruh kegiatan operasional perusahaan serta bertanggung jawab terhadap pencapaian tujuan perusahaan.</p>
+            </div>
+
+            <div class="org-item">
+                <h6>2. Quality Control (QC)</h6>
+                <p>Melakukan pemeriksaan dan pengawasan kualitas tabung LPG selama proses produksi.</p>
+            </div>
+
+            <div class="org-item">
+                <h6>3. Administrasi</h6>
+                <p>Bertanggung jawab terhadap pengelolaan dokumen, administrasi keuangan, pembukuan, dan kegiatan administrasi perusahaan.</p>
+            </div>
+
+            <div class="org-item">
+                <h6>4. Kepala Produksi</h6>
+                <p>Merencanakan, mengoordinasikan, dan mengawasi kegiatan produksi agar berjalan sesuai target dan standar perusahaan.</p>
+            </div>
+
+            <div class="org-item">
+                <h6>5. LK3/HSE</h6>
+                <p>Menangani aspek keselamatan, kesehatan kerja, dan lingkungan dalam kegiatan operasional.</p>
+            </div>
+
+            <div class="org-item">
+                <h6>6. Logistik/Gudang</h6>
+                <p>Bertanggung jawab terhadap pengelolaan persediaan bahan baku, pencatatan barang masuk dan keluar, serta kebutuhan gudang.</p>
+            </div>
+
+            <div class="org-item">
+                <h6>7. Supervisor</h6>
+                <p>Mengawasi pelaksanaan pekerjaan operasional dan mengoordinasikan tenaga kerja di bagian produksi.</p>
+            </div>
+
+            <div class="org-item">
+                <h6>8. Maintenance/Mekanik</h6>
+                <p>Melakukan perawatan dan perbaikan mesin maupun peralatan produksi.</p>
+            </div>
+
+            <div class="org-item">
+                <h6>9. Security</h6>
+                <p>Bertanggung jawab terhadap keamanan lingkungan perusahaan.</p>
+            </div>
+
+            <div class="org-item">
+                <h6>10. Driver</h6>
+                <p>Mendukung kegiatan transportasi dan pengangkutan.</p>
+            </div>
+
+            <div class="org-item">
+                <h6>11. Operator</h6>
+                <p>Melaksanakan kegiatan operasional dan proses produksi.</p>
+            </div>
+
+            <div class="org-item">
+                <h6>12. Office Boy</h6>
+                <p>Membantu menjaga kebersihan dan mendukung kebutuhan umum perusahaan.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- KEGIATAN DAN PERSEDIAAN -->
+<section class="section-space" id="kegiatan">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <div class="section-label">Kegiatan Operasional</div>
+            <h2 class="section-heading">Kegiatan dan Pengelolaan Persediaan</h2>
+            <p class="section-desc">
+                Kegiatan pemeliharaan tabung LPG dan pengelolaan bahan
+                pendukung merupakan bagian yang saling berkaitan dalam
+                mendukung kelancaran operasional perusahaan.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="activity-card">
+                    <img src="img/project-9.png"
+                         class="activity-image"
+                         alt="Perbaikan tangki LPG">
+                    <div class="activity-content">
+                        <h4>Perbaikan Tangki LPG</h4>
+                        <p>
+                            Kegiatan perbaikan tangki LPG menjadi konteks
+                            utama dalam pembahasan kebutuhan material
+                            dan bahan pendukung.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="activity-card">
+                    <img src="img/project-10.png"
+                         class="activity-image"
+                         alt="Bahan baku cat">
+                    <div class="activity-content">
+                        <h4>Kebutuhan Bahan Baku Cat</h4>
+                        <p>
+                            Bahan baku cat merupakan persediaan yang
+                            perlu disiapkan sesuai kebutuhan kegiatan
+                            perbaikan tangki LPG.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="activity-card">
+                    <img src="img/project-11.png"
+                         class="activity-image"
+                         alt="Pengelolaan material">
+                    <div class="activity-content">
+                        <h4>Pengelolaan Material</h4>
+                        <p>
+                            Pengelolaan material mencakup perhatian
+                            terhadap ketersediaan stok, penyimpanan,
+                            pencatatan, dan pemakaian bahan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row g-4 mt-4 align-items-stretch">
+
+            <div class="col-lg-5">
+                <div class="inventory-panel">
+                    <div class="section-label" style="color:#f5e8b6">
+                        Fokus Studi Kasus
+                    </div>
+
+                    <h3 class="mb-3">
+                        Pengelolaan Persediaan Bahan Baku Cat
+                    </h3>
+
+                    <p class="mb-0">
+                        Persediaan bahan baku memiliki peran penting
+                        dalam mendukung kelancaran kegiatan perbaikan.
+                        Pengelolaan yang baik membantu memastikan bahan
+                        tersedia ketika dibutuhkan serta mengurangi risiko
+                        kekurangan atau penumpukan stok.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+
+                <div class="inventory-step">
+                    <div class="inventory-number">01</div>
+                    <div>
+                        <h6>Identifikasi Kebutuhan</h6>
+                        <p>Mengetahui kebutuhan bahan baku cat berdasarkan rencana dan aktivitas perbaikan.</p>
+                    </div>
+                </div>
+
+                <div class="inventory-step">
+                    <div class="inventory-number">02</div>
+                    <div>
+                        <h6>Pemeriksaan Ketersediaan</h6>
+                        <p>Memeriksa jumlah persediaan yang tersedia sebelum bahan digunakan atau dilakukan pengadaan.</p>
+                    </div>
+                </div>
+
+                <div class="inventory-step">
+                    <div class="inventory-number">03</div>
+                    <div>
+                        <h6>Pencatatan Persediaan</h6>
+                        <p>Mencatat penerimaan dan pengeluaran bahan agar perubahan stok dapat dipantau.</p>
+                    </div>
+                </div>
+
+                <div class="inventory-step mb-0">
+                    <div class="inventory-number">04</div>
+                    <div>
+                        <h6>Evaluasi Stok</h6>
+                        <p>Mengevaluasi kondisi persediaan untuk membantu perencanaan kebutuhan berikutnya.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GALERI -->
+<section class="section-space" id="galeri" style="background:var(--cream)">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <div class="section-label">Dokumentasi</div>
+            <h2 class="section-heading">Galeri Kegiatan</h2>
+            <p class="section-desc">
+                Dokumentasi fasilitas, material, dan kegiatan operasional
+                KOPNAS Pertamina Bersatu 139.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="gallery-card">
+                    <img src="img/feature-1 (1).png"
+                         class="gallery-image"
+                         alt="Dokumentasi kegiatan pertama">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="gallery-card">
+                    <img src="img/feature-1 (2).png"
+                         class="gallery-image"
+                         alt="Dokumentasi kegiatan kedua">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="gallery-card">
+                    <img src="img/feature-1 (3).png"
+                         class="gallery-image"
+                         alt="Dokumentasi kegiatan ketiga">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- KONTAK -->
+<section class="section-space contact-section" id="kontak">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <div class="section-label">Hubungi Kami</div>
+            <h2 class="section-heading">Informasi dan Lokasi</h2>
+            <p class="section-desc">
+                Hubungi KOPNAS Pertamina Bersatu 139 melalui saluran
+                komunikasi berikut.
+            </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+
+            <div class="col-lg-5">
+                <div class="contact-panel">
+                    <h4 class="mb-4" style="font-size:19px">Informasi Kontak</h4>
+
+                    <a class="contact-link"
+                       href="https://wa.me/6289687664734"
+                       target="_blank" rel="noopener">
+                        <span class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </span>
+                        <span>
+                            <small class="d-block text-muted">WhatsApp</small>
+                            089687664734
+                        </span>
+                    </a>
+
+                    <a class="contact-link"
+                       href="https://www.instagram.com/kpb139?exln=MnVrZW8zMW85dnk5"
+                       target="_blank" rel="noopener">
+                        <span class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </span>
+                        <span>
+                            <small class="d-block text-muted">Instagram</small>
+                            @kpb139
+                        </span>
+                    </a>
+
+                    <a class="contact-link"
+                       href="https://maps.app.goo.gl/UU2qZBWz2ZL5GWVg7?g_st=ic"
+                       target="_blank" rel="noopener">
+                        <span class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            <small class="d-block text-muted">Lokasi</small>
+                            Buka Google Maps
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="contact-panel">
+                    <h4 class="mb-3" style="font-size:19px">
+                        Lokasi KOPNAS Pertamina Bersatu 139
+                    </h4>
+
+                    <iframe
+                        class="map-frame"
+                        title="Peta KOPNAS Pertamina Bersatu 139"
+                        src="https://maps.google.com/maps?q=KOPNAS%20Pertamina%20Bersatu%20139%20Binjai&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen>
+                    </iframe>
+
+                    <a href="https://maps.app.goo.gl/UU2qZBWz2ZL5GWVg7?g_st=ic"
+                       target="_blank" rel="noopener"
+                       class="btn-kopnas mt-3">
+                        <i class="fas fa-map-marked-alt me-2"></i>
+                        Buka Lokasi di Google Maps
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-kopnas">
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-5 col-md-6">
+
+                <img src="img/logo-kopnas.png"
+                     class="footer-logo"
+                     alt="Logo KOPNAS PB 139">
+
+                <h5>KOPNAS Pertamina Bersatu 139</h5>
+
+                <p>
+                    Website profil dan informasi kegiatan operasional
+                    dengan fokus pada pengelolaan persediaan bahan baku
+                    cat untuk kegiatan perbaikan tangki LPG.
+                </p>
+
+                <div class="footer-social">
+                    <a href="https://wa.me/6289687664734"
+                       target="_blank" rel="noopener"
+                       aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/kpb139?exln=MnVrZW8zMW85dnk5"
+                       target="_blank" rel="noopener"
+                       aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://maps.app.goo.gl/UU2qZBWz2ZL5GWVg7?g_st=ic"
+                       target="_blank" rel="noopener"
+                       aria-label="Google Maps">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5>Navigasi</h5>
+                <p><a href="#beranda">Beranda</a></p>
+                <p><a href="#profil">Profil Perusahaan</a></p>
+                <p><a href="#sejarah">Sejarah</a></p>
+                <p><a href="#visi-misi">Visi dan Misi</a></p>
+                <p><a href="#organisasi">Struktur Organisasi</a></p>
+                <p><a href="#kegiatan">Kegiatan dan Persediaan</a></p>
+                <p><a href="#galeri">Galeri</a></p>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <h5>Kontak Perusahaan</h5>
+
+                <p>
+                    <i class="fab fa-whatsapp me-2"></i>
+                    <a href="https://wa.me/6289687664734"
+                       target="_blank" rel="noopener">
+                        089687664734
+                    </a>
+                </p>
+
+                <p>
+                    <i class="fab fa-instagram me-2"></i>
+                    <a href="https://www.instagram.com/kpb139?exln=MnVrZW8zMW85dnk5"
+                       target="_blank" rel="noopener">
+                        @kpb139
+                    </a>
+                </p>
+
+                <p>
+                    <i class="fas fa-map-marker-alt me-2"></i>
+                    <a href="https://maps.app.goo.gl/UU2qZBWz2ZL5GWVg7?g_st=ic"
+                       target="_blank" rel="noopener">
+                        Google Maps
+                    </a>
+                </p>
+
+                <p>
+                    Kelurahan Cengkeh Turi, Kecamatan Binjai Utara,
+                    Kota Binjai, Sumatera Utara.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="d-flex justify-content-between flex-wrap gap-2">
+                <span>
+                    &copy; <span id="tahun"></span>
+                    KOPNAS Pertamina Bersatu 139.
+                </span>
+                <span>Website Profil Perusahaan</span>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.getElementById("tahun").textContent =
+    new Date().getFullYear();
+
+document.querySelectorAll("#navbarKopnas .nav-link").forEach(link => {
+    link.addEventListener("click", function () {
+        const menu = document.getElementById("navbarKopnas");
+
+        if (menu.classList.contains("show")) {
+            bootstrap.Collapse.getOrCreateInstance(menu).hide();
+        }
+    });
+});
+</script>
+
+</body>
+</html>
